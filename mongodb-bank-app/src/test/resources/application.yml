@@ -1,0 +1,14 @@
+de:
+  flapdoodle:
+    mongodb:
+      embedded:
+        version: 7.0.0
+
+spring:
+  data:
+    mongodb:
+      database: bankapp-test
+
+logging:
+  level:
+    com.revature.bank: DEBUG
