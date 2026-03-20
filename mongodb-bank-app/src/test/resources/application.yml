@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      database: bankapp-test
+
+logging:
+  level:
+    com.revature.bank: DEBUG
