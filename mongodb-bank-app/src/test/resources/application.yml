@@ -7,8 +7,13 @@ de:
 spring:
   data:
     mongodb:
-      database: bankapp-test
+      database: bankdb-test
+
+bank:
+  default-sort-code: "987654"
+  max-accounts-per-customer: 10
 
 logging:
   level:
     com.revature.bank: DEBUG
+    com.bankapp: DEBUG

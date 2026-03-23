@@ -1,13 +1,20 @@
 spring:
+  application:
+    name: bank-application
   data:
     mongodb:
-      uri: mongodb://localhost:27017/bankapp
-      database: bankapp
+      uri: ${MONGODB_URI:mongodb://localhost:27017/bankdb}
+      database: ${MONGODB_DATABASE:bankdb}
 
 server:
-  port: 8080
+  port: ${SERVER_PORT:8080}
+
+bank:
+  default-sort-code: "987654"
+  max-accounts-per-customer: 10
 
 logging:
   level:
     com.revature.bank: DEBUG
+    com.bankapp: DEBUG
     org.springframework.data.mongodb: DEBUG
